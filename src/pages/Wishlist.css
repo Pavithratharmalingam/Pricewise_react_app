@@ -1,0 +1,126 @@
+/* Wishlist Page */
+
+.page {
+    min-height: 100vh;
+    padding: 40px 6%;
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+
+.page h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Empty Wishlist Message */
+
+.page>p {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+/* Product Grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Product Card */
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Product Image */
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Product Name */
+
+.product-card h3 {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* Product Price */
+
+.product-card p {
+    color: #e63946;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+/* Remove Button */
+
+.product-card button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #c82333;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 576px) {
+    .page {
+        padding: 25px 15px;
+    }
+
+    .page h1 {
+        font-size: 26px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .product-card {
+        padding: 18px;
+    }
+}

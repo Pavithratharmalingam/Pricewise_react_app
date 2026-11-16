@@ -1,0 +1,197 @@
+/* Compare Page */
+
+.compare-page {
+    min-height: 100vh;
+    padding: 40px 6%;
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Heading */
+
+.compare-page h1 {
+    text-align: center;
+    color: #17243b;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.compare-subtitle {
+    text-align: center;
+    color: #687386;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Search Box */
+
+.compare-search {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 16px;
+    margin: 0 auto 35px;
+    border: 1px solid #dce2eb;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.compare-search:focus {
+    border-color: #2864f0;
+    box-shadow: 0 0 5px rgba(40, 100, 240, 0.2);
+}
+
+/* Comparison Grid */
+
+.compare-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Comparison Card */
+
+.compare-card {
+    min-width: 0;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #e8edf5;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compare-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Name */
+
+.compare-card h3 {
+    text-align: center;
+    color: #17243b;
+    font-size: 20px;
+    margin: 0 0 22px;
+}
+
+/* Store Price Rows */
+
+.store-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 13px 10px;
+    margin-bottom: 10px;
+    background-color: #f6f8fc;
+    border: 1px solid #edf0f5;
+    border-radius: 7px;
+    color: #4d596b;
+    font-size: 14px;
+}
+
+.store-price strong {
+    color: #17243b;
+    white-space: nowrap;
+}
+
+/* Highlight Cheapest Store */
+
+.store-price.best-price {
+    background-color: #e8f8ee;
+    border-color: #a8e5bd;
+    color: #16753a;
+}
+
+.store-price.best-price strong {
+    color: #16753a;
+}
+
+/* Lowest Price Section */
+
+.lowest-price {
+    text-align: center;
+    margin-top: 20px;
+    padding: 17px 10px;
+    background-color: #e8f8ee;
+    border-radius: 8px;
+}
+
+.lowest-price span {
+    color: #16753a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.lowest-price h4 {
+    color: #16753a;
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.lowest-price p {
+    color: #16753a;
+    font-size: 13px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* No Results */
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #777;
+    padding: 30px 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+    .compare-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+    .compare-page {
+        padding: 25px 15px;
+    }
+
+    .compare-page h1 {
+        font-size: 26px;
+    }
+
+    .compare-subtitle {
+        font-size: 14px;
+        margin-bottom: 22px;
+    }
+
+    .compare-search {
+        margin-bottom: 25px;
+    }
+
+    .compare-list {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .compare-card {
+        padding: 18px;
+    }
+
+    .compare-card h3 {
+        font-size: 19px;
+    }
+}

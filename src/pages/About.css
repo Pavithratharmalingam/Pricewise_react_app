@@ -1,0 +1,117 @@
+/* About Page */
+
+.about {
+    min-height: 100vh;
+    padding: 50px 8%;
+    background-color: #f5f7fb;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Main Heading */
+
+.about h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #e63946;
+    margin-bottom: 25px;
+}
+
+/* Paragraph */
+
+.about p {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    text-align: center;
+}
+
+/* Section Headings */
+
+.about h2 {
+    max-width: 850px;
+    margin: 35px auto 15px;
+    color: #222;
+    font-size: 24px;
+    border-left: 4px solid #e63946;
+    padding-left: 12px;
+}
+
+/* Features List */
+
+.about ul {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px 25px 25px 45px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* List Items */
+
+.about li {
+    padding: 12px 5px;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.about li:last-child {
+    border-bottom: none;
+}
+
+/* Hover Effect */
+
+.about li:hover {
+    color: #e63946;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 768px) {
+    .about {
+        padding: 35px 5%;
+    }
+
+    .about h1 {
+        font-size: 29px;
+    }
+
+    .about h2 {
+        font-size: 21px;
+    }
+
+    .about p,
+    .about li {
+        font-size: 15px;
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+    .about {
+        padding: 25px 15px;
+    }
+
+    .about h1 {
+        font-size: 25px;
+    }
+
+    .about h2 {
+        font-size: 19px;
+        margin-top: 28px;
+    }
+
+    .about ul {
+        padding: 15px 15px 15px 35px;
+    }
+
+    .about li {
+        padding: 10px 3px;
+    }
+}
